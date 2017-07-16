@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edualves.com.coordinatorlayout.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/container_parent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:animateLayoutChanges="true"
+        android:background="@color/colorAccent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/anchor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="View"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slide overshoot" />
+
+        <Button
+            android:id="@+id/btn_slide_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slide Dec" />
+
+        <Button
+            android:id="@+id/btn_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slide" />
+
+        <Button
+            android:id="@+id/btn_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hide" />
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
